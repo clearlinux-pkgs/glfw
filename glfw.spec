@@ -4,7 +4,7 @@
 #
 Name     : glfw
 Version  : 3.1.2
-Release  : 1
+Release  : 2
 URL      : https://github.com/glfw/glfw/archive/3.1.2.tar.gz
 Source0  : https://github.com/glfw/glfw/archive/3.1.2.tar.gz
 Summary  : A multi-platform library for OpenGL, window and input
@@ -48,7 +48,7 @@ lib components for the glfw package.
 %build
 mkdir clr-build
 pushd clr-build
-cmake .. -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIBS:BOOL=ON -DLIB_INSTALL_DIR:PATH=%{_libdir}
+cmake .. -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIBS:BOOL=ON -DLIB_INSTALL_DIR:PATH=%{_libdir} -DLIB_SUFFIX=64
 make V=1  %{?_smp_mflags}
 popd
 
@@ -60,18 +60,18 @@ popd
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/cmake/glfw/glfw3Config.cmake
-/usr/lib/cmake/glfw/glfw3ConfigVersion.cmake
-/usr/lib/cmake/glfw/glfwTargets-noconfig.cmake
-/usr/lib/cmake/glfw/glfwTargets.cmake
+/usr/lib64/cmake/glfw/glfw3Config.cmake
+/usr/lib64/cmake/glfw/glfw3ConfigVersion.cmake
+/usr/lib64/cmake/glfw/glfwTargets-noconfig.cmake
+/usr/lib64/cmake/glfw/glfwTargets.cmake
 
 %files dev
 %defattr(-,root,root,-)
 /usr/include/GLFW/glfw3.h
 /usr/include/GLFW/glfw3native.h
-/usr/lib/*.so
+/usr/lib64/*.so
 /usr/lib64/pkgconfig/*.pc
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/*.so.*
+/usr/lib64/*.so.*
