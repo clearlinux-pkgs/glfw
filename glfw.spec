@@ -4,7 +4,7 @@
 #
 Name     : glfw
 Version  : 3.1.2
-Release  : 2
+Release  : 3
 URL      : https://github.com/glfw/glfw/archive/3.1.2.tar.gz
 Source0  : https://github.com/glfw/glfw/archive/3.1.2.tar.gz
 Summary  : A multi-platform library for OpenGL, window and input
