@@ -4,7 +4,7 @@
 #
 Name     : glfw
 Version  : 3.3.2
-Release  : 8
+Release  : 9
 URL      : https://github.com/glfw/glfw/archive/3.3.2/glfw-3.3.2.tar.gz
 Source0  : https://github.com/glfw/glfw/archive/3.3.2/glfw-3.3.2.tar.gz
 Summary  : A multi-platform library for OpenGL, window and input
@@ -18,7 +18,7 @@ BuildRequires : extra-cmake-modules pkgconfig(wayland-client)
 BuildRequires : extra-cmake-modules wayland
 BuildRequires : extra-cmake-modules-data
 BuildRequires : glibc-dev
-BuildRequires : libX11-dev libICE-dev libSM-dev libXau-dev libXcomposite-dev libXcursor-dev libXdamage-dev libXdmcp-dev libXext-dev libXfixes-dev libXft-dev libXi-dev libXinerama-dev libXi-dev libXmu-dev libXpm-dev libXrandr-dev libXrender-dev libXres-dev libXScrnSaver-dev libXt-dev libXtst-dev libXv-dev libXxf86misc-dev libXxf86vm-dev
+BuildRequires : libX11-dev libICE-dev libSM-dev libXau-dev libXcomposite-dev libXcursor-dev libXdamage-dev libXdmcp-dev libXext-dev libXfixes-dev libXft-dev libXi-dev libXinerama-dev libXi-dev libXmu-dev libXpm-dev libXrandr-dev libXrender-dev libXres-dev libXScrnSaver-dev libXt-dev libXtst-dev libXv-dev libXxf86vm-dev
 BuildRequires : mesa-dev
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(osmesa)
